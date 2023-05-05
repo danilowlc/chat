@@ -34,6 +34,6 @@ while True:
         
     salas[sala].append(client)
     print(f'{nome} entrou na sala {sala}! INFO {addr}')
-    broadcast(sala, f'{nome} entrou na sala {sala}')
+    broadcast(sala, f'{nome} entrou na sala {sala}\n')
     thread = threading.Thread(target=enviar_mensagem, args=(nome, sala, client))
     thread.start()
